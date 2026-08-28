@@ -21,7 +21,7 @@ Predicted next 5 term(s) (using the top candidate): 34, 55, 89, 144, 233
 ## Install
 
 ```
-pip install -e .
+pip install sequence-machine
 ```
 
 This installs the `sequence-machine` command and the `sequence_machine`
