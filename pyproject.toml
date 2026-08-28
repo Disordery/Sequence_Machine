@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sequence-machine"
+version = "0.1.0"
+description = "Discover the closed-form formula, recurrence, or generative rule behind a sequence of numbers."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Disordery" }]
+keywords = ["sequence", "oeis", "symbolic-regression", "recurrence", "math"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://example.com/sequence-machine"
+
+[project.scripts]
+sequence-machine = "sequence_machine.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sequence_machine*"]
+
+[tool.setuptools.package-data]
+sequence_machine = ["py.typed"]
